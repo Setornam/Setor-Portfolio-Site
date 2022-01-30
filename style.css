@@ -156,7 +156,8 @@ h6{
 .fa-external-link-alt{
     font-size: 1.6em;
     color: #e6f1ff;
-    float: left;
+    position: absolute;
+    top: 261px;
 }
 
 
@@ -366,14 +367,74 @@ left: 0px;
 .fa-github-alt{
     font-size: 1.8em;
     color: #e6f1ff;
-    position: relative;
-    top: -17px;
-    left: 20px;
+    position: absolute;
+    top: 260px;
+    left: 70px;
 
 }
 
 .no-display{
     display: none;
+}
+
+.tool::before,
+.tool::after {
+  --scale: 0;
+  --arrow-size: 10px;
+  --tooltip-color: #e6f1ff;
+
+  position: absolute;
+  top: 365px;
+  left: 12px;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+}
+
+.tool::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  color: #0a192f;
+  font-family: Roboto, 'sans serif';
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  background: var(--tooltip-color);
+}
+
+.tool:hover::before,
+.tool:hover::after {
+  --scale: 1;
+}
+
+.tool::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+.inner-projects .tool::before,
+.inner-projects .tool::after{
+    top: 261px;
+    left: 35px;
+}
+
+.column3 .tool{
+    top: 100px;
+}
+
+.inner-projects .git-hub .tool::before,
+.inner-projects .git-hub .tool::after{
+    top: 261px;
+    left: 82px;
 }
 
 
