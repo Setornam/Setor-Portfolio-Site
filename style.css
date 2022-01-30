@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a{
+    cursor: pointer;
+}
+
+
+#home{
+    transition:  ease-in;
+    transition-delay: 5s;
+}
+
+
+/*For smooth scroll transition*/
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+#bg{
+    height: 100vh;
+    position: absolute;
+    background-color: #0a192f;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+      
+}
+
+#home{
+    position: absolute;
+    max-height: 100vh;
+    
+}
+
+.column{
+    min-width: 70vw;
+    height: 100vh;
+    position: absolute;
+    padding: 150px 0 0 70px;
+}
+
+
+
+.planet{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgb(176, 255, 255), rgba(0, 56, 49, 0.938));    
+    position: absolute;
+    left: 800px;
+    top: 30px;
+    border-radius: 50%;
+    z-index:  3;
+
+}
+
+.planet:before{
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, #d4f7fc, rgba(2, 37, 39, 0.137) 58%);
+    filter: blur(5px);
+}
+
+.planet2{
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: -250px;
+    left: 720px;
+    z-index: -1;
+    opacity: 0.3;
+    z-index: 2;  
+
+}
+
+.planet2:before{
+    content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #aef6ff, rgba(255, 255, 255, 0) 58%);
+  filter: blur(5px);
+  z-index: 2;
+  
+}
+
+.column img{
+    position: absolute;
+    left: 800px;
+    top:54px;
+    z-index: 4;
+    
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.9em;
+    line-height: 1.1em;
+    color: #e6f1ff;
+}
+
+h6{
+    font-family: 'Roboto monospace', monospace;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    letter-spacing: 0.05em;
+    color: rgb(0, 255, 221);
+}
+
+
+
+
+@keyframes burst-animation {
+    from { opacity: 1; transform:scale(1); }
+    to { opacity: 0; transform:scale(10); }
+  }
+
+  .beacon:hover{
+      animation: none;
+      animation-fill-mode: none;
+  }
+
+  .fa-folder{  
+    color: rgb(0, 255, 221);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    position: relative;
+    top: 17px;
+    float: left;
+    margin-right: 20px;
+    z-index: 2;
+    
+}
+
+.fa-external-link-alt{
+    font-size: 1.6em;
+    color: #e6f1ff;
+    float: left;
+}
+
+
+
+.fa-github-alt:hover{
+    color: rgb(0, 255, 221);
+}
+
+
+.fa-external-link-alt:hover{
+    color: rgb(0, 255, 221);
+}
+
+.fa-file-download{
+    font-size: 2em;
+    color: #e6f1ff;
+}
+
+.fa-file-download:hover{
+    color: rgb(0, 255, 221);
+}
+
+
+
+#about{
+    position: absolute;
+}
+
+.globe{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgb(176, 255, 255), rgba(0, 56, 49, 0.938));    
+    position: absolute;
+    left: -70px;
+    top: 30px;
+    border-radius: 50%;
+    z-index:  3;
+}
+
+.globe:before{
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, #d4f7fc, rgba(2, 37, 39, 0.137) 58%);
+    filter: blur(5px);
+}
+
+#about img{
+    position: absolute;
+    top: 13px;
+    z-index: 4;
+}
+
+.column1{
+    width: 50%;
+    float: left;
+}
+
+
+
+.column2{
+    width: 700px;
+    float: left;
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+
+h2{
+    color:#e6f1ff;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: 2.5em;
+
+}
+
+ a{
+    color: rgb(0, 255, 221);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #8892b0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+}
+
+.shuttle{
+    font-size: 1em;
+    
+}
+
+
+.true{
+    position: absolute;
+    width: 50px;
+    z-index: 4;
+}
+
+.pro{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 150px;
+    left: 70px;
+}
+
+#port{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    z-index: 50;  
+}
+
+.projects{
+    position: relative;
+    width: 90%;
+    z-index: 10;
+    margin-top: 30px;
+}
+
+.inner-projects{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 350px;
+    background-color: #040e1d;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px -5px rgba(176, 255, 255, 0.356);
+    margin: 0 20px 0 20px;
+    padding: 25px;
+
+}
+
+.inner-projects h4{
+    font-family: Roboto, 'sans serif';
+    font-size: 1.5em;
+    color: #e6f1ff;
+    padding: 20px 0 20px 0;
+}
+
+.inner-projects ul{
+    list-style: none;
+    font-family: 'Roboto mono', monospace;
+    font-size: 0.8em;
+    color: #8892b0;
+    position: absolute;
+    top: 88%;
+    text-align: right;
+}
+
+.inner-projects li{
+    display: inline; 
+    margin-right: 20px;
+}
+
+.inner-projects a{
+    font-family: 'Roboto mono', monospace;
+    font-size: 0.8em;
+}
+
+#connect{
+    position: absolute;
+    left: 50px;
+    z-index: -1;
+}
+
+.column3{
+    width: 700px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+
+.column3 h2{
+position: absolute;
+top: 10px;
+left: 0px;
+}
+
+.column3 p{
+    position: absolute;
+    top: 100px;
+}
+
+.fa-paper-plane{
+    font-size: 1.5em;
+    margin-right: 20px;
+    color: #e6f1ff;
+    
+}
+
+.fa-paper-plane:hover{
+    color: rgb(0, 255, 221);
+}
+
+.fa-github-alt{
+    font-size: 1.8em;
+    color: #e6f1ff;
+    position: relative;
+    top: -17px;
+    left: 20px;
+
+}
+
+.no-display{
+    display: none;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+
+@media screen and (max-width: 1024px) {
+    #bg{
+        display: none;
+
+    }
+
+    body{
+        background-color: #0a192f;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .no-display{
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin-top: 50%;
+        text-align: center;
+        padding-left: 50px;
+        
+    }
+
+    h5{
+        font-family: Roboto, 'sans-serif';
+        color: #e6f1ff;
+        font-size: 2.5em;
+    }
+
+    
+
+    
+}
+

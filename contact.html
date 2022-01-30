@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="orbit.css">
+
+    <title>Transitions 3 Layers</title>
+</head>
+<body>
+  <div class="transition transition-1 is-active">
+    <div class="pulse"></div>
+
+        <div id="circle-orbit-container">
+
+      
+
+            <!-- Circles second closest to the central point -->
+            <div id="last-orbit">
+                <div class="last-orbit-cirlces">
+                    <img src="Image/pluto.png">
+                </div>
+              </div>
+          
+          </div>
+  </div>
+
+  <div id="bg">
+    <div class="list-container">
+        <button class="more-button">
+            <div class="menu-icon">
+                <div class="menu-icon-line half first"></div>
+                <div class="menu-icon-line"></div>
+                <div class="menu-icon-line half  last"></div>
+            </div>
+        </button>
+        <ul class="more-button-list">
+            <li class="link">
+                <span><a href="http://127.0.0.1:5500/index.html">Home</a></span>
+            </li>
+
+            <li class="link">
+                <span><a href="http://127.0.0.1:5500/about.html">About</a></span>
+            </li>
+
+            <li class="link">
+                <span><a href="http://127.0.0.1:5500/portfolio.html">Projects</a></span>
+            </li>
+
+            <li class="link">
+                <span><a href="http://127.0.0.1:5500/contact.html">Contact</a></span>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div id="about">
+
+
+
+        <div class="column3">
+           <h2>Contact Me</h2><br><br><br>
+
+           <p>
+            I am currently available for full-time, part-time and remote offers. Feel free to reach out to me any time. I prefer to talk over <a href="mailto:setorkg@gmail.com">email</a>
+
+            , especially since we may be a few time zones away.<br><br>
+            <a target="blank" href="mailto:setorkg@mail.com"><i class="fas fa-paper-plane"></i></a>
+
+            
+            
+            
+
+              
+           </p><br>
+
+
+          
+            
+            
+           
+        </div>
+
+
+    </div>
+
+    <div id="circle-orbit-container">
+
+      
+
+        <!-- Circles second closest to the central point -->
+        <div id="last-orbit">
+            <div class="last-orbit-cirlces">
+                <img src="Image/pluto.png">
+            </div>
+          </div>
+      
+      </div>
+
+     
+        <img id="connect" src="Image/connect.png">
+        
+      </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="no-display">
+    <h5>Nothing to see here!!!</h5>
+    <p> Please view this website on a desktop or a laptop.</p>
+    <p>Thank You.</p>
+    <div id="circle-orbit-container">
+
+  
+
+        <!-- Circles second closest to the central point -->
+        <div id="last-orbit">
+            <div class="last-orbit-cirlces">
+                <img src="Image/pluto.png">
+            </div>
+          </div>
+      
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    document.querySelector('.more-button').addEventListener('click', function(){
+        document.querySelector('.list-container').classList.toggle('active');
+    });
+
+</script>
+
+<script type="text/javascript" src="JS/particles.min.js"></script>
+
+<script type="text/javascript" src="JS/custom.js"></script>
+
+<script src="https://kit.fontawesome.com/064e9d4e90.js" crossorigin="anonymous">
+</script>
+
+
+<script src="transition.js"></script>
+</body>
+</html>

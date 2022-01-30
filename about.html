@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="orbit.css">
+    <title>Transitions 3 Layers</title>
+</head>
+<body>
+  <div class="transition transition-1 is-active">
+    <div class="pulse"></div>
+
+        <div id="circle-orbit-container">
+
+      
+
+            <!-- Circles second closest to the central point -->
+            <div id="last-orbit">
+                <div class="last-orbit-cirlces">
+                    <img src="Image/pluto.png">
+                </div>
+              </div>
+          
+          </div>
+  </div>
+  <div id="bg">
+
+    <div class="list-container">
+            <button class="more-button">
+                <div class="menu-icon">
+                    <div class="menu-icon-line half first"></div>
+                    <div class="menu-icon-line"></div>
+                    <div class="menu-icon-line half  last"></div>
+                </div>
+            </button>
+            <ul class="more-button-list">
+                <li class="link">
+                    <span><a href="http://127.0.0.1:5500/index.html">Home</a></span>
+                </li>
+    
+                <li class="link">
+                    <span><a href="http://127.0.0.1:5500/about.html">About</a></span>
+                </li>
+    
+                <li class="link">
+                    <span><a href="http://127.0.0.1:5500/portfolio.html">Projects</a></span>
+                </li>
+    
+                <li class="link">
+                    <span><a href="http://127.0.0.1:5500/contact.html">Contact</a></span>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+    <div id="about">
+
+        <div class="column1">
+            <div class="globe"></div>
+            <img src="Image/j.png">
+        </div>
+
+
+        <div class="column2">
+           <h2>#About Me{</h2><br><br>
+           <p>
+               Hello there!<br>
+               I am Setornam, a <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">React</a> frontend developer from <a href="https://en.wikipedia.org/wiki/Ghana">Ghana</a>. I enjoy building responsive frontend interfaces for web that deliver amazing user experiences.
+              
+           </p><br>
+
+           <p>
+           I have been building frontend interfaces ,that deliver value and make people's lives easier since 2020. I am very interested in no code development, and I use this in delivering quick tech solutions to businesses as a <a href="https://dev-setorkwame.pantheonsite.io">freelance software developer</a>.
+           </p><br>
+           <p>
+              I am also interested in inspiring, motivating and imparting people with knowledge in tech, as I do at <a href="https://soronkoacademy.com/">Soronko Academy</a> as a tech trainer.
+           </p><br><br>
+
+           <p><a href="/Image/Setor.png" download><i class="fas fa-file-download"></i></a> <h2>}</h2></p><br>
+          
+           
+            
+           
+        </div>
+
+
+    </div>
+
+    
+
+</div>
+
+
+<div class="no-display">
+    <h5>Nothing to see here!!!</h5>
+    <p> Please view this website on a desktop or a laptop.</p>
+    <p>Thank You.</p>
+    <div id="circle-orbit-container">
+
+  
+
+        <!-- Circles second closest to the central point -->
+        <div id="last-orbit">
+            <div class="last-orbit-cirlces">
+                <img src="Image/pluto.png">
+            </div>
+          </div>
+      
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    document.querySelector('.more-button').addEventListener('click', function(){
+        document.querySelector('.list-container').classList.toggle('active');
+    });
+
+</script>
+
+<script type="text/javascript" src="JS/particles.min.js"></script>
+
+<script type="text/javascript" src="JS/custom.js"></script>
+
+<script src="https://kit.fontawesome.com/064e9d4e90.js" crossorigin="anonymous">
+</script>
+
+
+<script src="transition.js"></script>
+</body>
+</html>
