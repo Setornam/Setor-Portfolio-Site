@@ -13,15 +13,9 @@ a{
 }
 
 
-#home{
-    transition:  ease-in;
-    transition-delay: 5s;
-}
-
 
 /*For smooth scroll transition*/
 html{
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: hidden; 
 }
@@ -41,6 +35,8 @@ html{
 #home{
     position: absolute;
     max-height: 100vh;
+    transition:  ease-in;
+    transition-delay: 5s;
     
 }
 
