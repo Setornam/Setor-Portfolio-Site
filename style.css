@@ -266,14 +266,12 @@ section#services {
 
 #portfolio{
     background: var(--color-light);
-    padding: 8rem;
 }
 
 .portfolio__head{
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    
 }
 
 
