@@ -327,6 +327,7 @@ section#services {
 .portfolio__project-image img{
     transform: 0;
     transition: all 15s ease;
+    width: 100%;
 }
 
 .portfolio__cta{
