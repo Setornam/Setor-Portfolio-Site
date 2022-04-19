@@ -266,6 +266,7 @@ section#services {
 
 #portfolio{
     background: var(--color-light);
+    padding: 8rem;
 }
 
 .portfolio__head{
