@@ -23,7 +23,6 @@
     justify-content: center;
     color: #e6f1ff;
     position: relative;
-    z-index: 12;
     animation: bloom infinite 1.5s;
     
 
@@ -197,3 +196,41 @@
 }
 
 
+/*================== MEDIA QUERIES (PHONES)====================*/
+@media screen and (max-width: 600px){
+
+    .list-container{
+        position: fixed;
+        left: 20px;
+    }
+    .more-button{
+        width: 45px;
+        height: 45px;
+        z-index: 2;
+    }
+
+    .menu-icon{
+        width: 17px;
+        height: 17px;
+    }
+
+    .more-button-list{
+        box-shadow: 5px 5px 10px -10px rgba(128, 128, 128, 0.582);
+        width: 150px;
+        height: 300px;
+        border-radius: 0;
+        z-index: 1;
+        background-color: #0a192f;
+    }
+
+    .link{
+        float: none;
+        padding-bottom: 35px;
+        top: 45px;
+        left: 20px;
+    }
+
+    .link a{
+        font-size: 0.84em;
+    }
+}
