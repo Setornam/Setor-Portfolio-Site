@@ -218,6 +218,11 @@ h3{
     font-size: 1.6rem;
 }
 
+p{
+    font-size: 1rem;
+}
+
+
 h4{
     font-size: 1.4rem;
 }
@@ -521,47 +526,275 @@ footer{
     color: var(--color-white);
 }
 
-.mobile{
-    background-repeat: no-repeat;
-    height: 0%;
-    width: 0%;
-    position: absolute;
+
+
+/*================== MEDIA QUERIES (BIG TABLETS)====================*/
+@media screen and (max-width: 1024px){
+    #bg{
+        height: 650px;
+    }
+        
+        #box2{
+        left: 50px;
+    }
+
+    #about{ 
+        padding: 8rem 3rem;
+        margin-top: 45rem;
+    }
+
+    #services {
+        padding: 8rem 3rem;
+    }
+
+    #portfolio{
+        padding: 8rem 3rem;
+    }
+
+    #contact{
+        padding: 8rem 3rem;
+    }
+
+    
+
 }
 
-
-/*================== MEDIA QUERIES (PHONES)====================*/
-@media screen and (max-width: 1024px){
-    .list-container, .column, .column2, #services, #portfolio, #contact{
-        display: none;
+/*================== MEDIA QUERIES (MEDIUM TABLETS)====================*/
+@media screen and (max-width: 912px){
+    #about{ 
+        padding: 8rem 2rem;
+        margin-top: 43rem;
     }
-    .mobile{
-        display: inline;
-        position: absolute;
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        top: 45%;
 
+    #services {
+        padding: 8rem 2rem;
+    }
+
+    #portfolio{
+        padding: 8rem 2rem;
+    }
+
+    #contact{
+        padding: 8rem 2rem;
+    }
+
+}
+
+/*================== MEDIA QUERIES (SMALLER TABLETS)====================*/
+@media screen and (max-width: 820px){
+    #bg{
+        height: 600px;
+    }
+
+    #about{ 
+        padding: 8rem 1.8rem;
+        margin-top: 37rem;
+        padding-bottom: 0;
+    }
+
+    #services {
+        padding: 8rem 1.8rem;
+    }
+    .services__container{
+        display: block;
+    }
+
+    .services__right h2{
+        margin-top: 4rem;
+    }
+
+    .timeline{
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    #portfolio{
+        padding: 8rem 1.8rem;
+    }
+
+    .portfolio__projects{
+        margin-top: 2rem;
+        display: block;
         
+    }
+
+    .portfolio__project{
+        margin: 2rem 1.8rem;
+    }
+
+    .portfolio__project-image{
+        height: 25rem;
+    }
+
+    #contact{
+        padding: 8rem 1.8rem;
+    }
+
+    .contact__container{
+        display: block;
+    }
+
+    .contact__container h2{
+        text-align: center;
+    }
+
+    .contact__container p{
+        text-align: center;
+    }
+
+    .contact__socials{
+        justify-content: center;
+    }
+
+    form input,
+textarea {
+    width: 30rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 15%;
+}
+
+.about__left{
+    display: none;
+}
+
+.about__container{
+    display: block;
+    text-align: center;
     }
 
 }
 
 /*================== MEDIA QUERIES (PHONES)====================*/
 @media screen and (max-width: 600px){
-    .list-container, .column, .column2, #services, #portfolio, #contact{
+    #box1{
         display: none;
     }
-    .mobile{
-        display: inline;
-        position: absolute;
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        top: 45%;
+    
 
+    .portfolio__head h3{
+        width: 100%;
+    }
+
+    .portfolio__project-image{
+        height: 18rem;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-left: 8%;
+    }
+
+    form input,
+textarea {
+    padding: 1rem;
+    width: 25rem;
+    }
+
+    .about__left{
+        display: block;
+    }
+
+    #services{
+        padding-bottom: 0;
+    }
+
+    .timeline {
+        display: flex;
+        margin-left: 30%;
+      }
+      .timeline ul {
+        display: block;
+        margin-top: 75px;
+      }
+      .timeline ul li {
+        margin-top: 0px;
+        position: relative;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 70px;
+      }
+      .timeline ul li p {
+        transform: translateY(-25px);
+       
+      }
+    
+      .date {
+        font-size: 12px;
+        position: absolute;
+        top: -40px;
+        left: -40%;
+      }
+    
+      .timeline-point {
+        width: 15px;
+        height: 15px;
+        left: -9px;
+      }
+    
+      .timeline-line {
+        width: 6px;
+        height: 350px;
+      }
+    
+      
+      
+}
+
+/*================== MEDIA QUERIES (PHONES 412PX WIDTH)====================*/
+@media screen and (max-width: 414px){
+    #text{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #box2{
+        left: 15px;
         
+    }
+
+    .portfolio__project{
+        margin: 2rem 1rem;
+    }
+
+    .portfolio__project-image{
+        height: 15.7rem;
+    }
+
+    form input,
+    textarea {
+        width: 20rem;
+    }
+
+    form{
+        margin-left: 4%;
     }
 
 }
 
+/*================== MEDIA QUERIES (PHONES 375PX WIDTH)====================*/
+@media screen and (max-width: 375px){
+    #box2{
+        left: -2px;
+    }
+
+    .portfolio__project-image{
+        height: 13rem;
+    }
+
+    .portfolio__project{
+        margin: 2rem 0.6rem;
+    }
+
+    form{
+        margin-left: -3px;
+    }
+}
